@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinagong Dagat - Landscapes</title>
+<style>
+/* LOCATION SECTION */
+.location {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+    text-align: center;
+}
+
+.location h3 {
+    color: #176b50;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.location p {
+    margin-bottom: 15px;
+    color: #52665b;
+}
+
+.location iframe {
+    width: 100%;
+    height: 350px;
+    border: 0;
+    border-radius: 12px;
+    margin: 10px 0 20px;
+}
+
+.map-button {
+    display: inline-block;
+    background-color: #176b50;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.map-button:hover {
+    background-color: #d97706;
+}
+
+@media (max-width: 480px) {
+    .location {
+        padding: 18px;
+    }
+
+    .location iframe {
+        height: 280px;
+		
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8f5;
+            color: #263b32;
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #064e3b, #2e8b68);
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #e0f2e9;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #ffffff;
+            padding: 15px 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #176b50;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d97706;
+        }
+
+        /* MAIN CONTENT */
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            color: #176b50;
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .intro p {
+            max-width: 750px;
+            margin: 0 auto;
+            color: #52665b;
+        }
+
+        /* IMAGE GALLERY */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        /* DESCRIPTION */
+        .description {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-top: 30px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07);
+        }
+
+        .description h3 {
+            color: #176b50;
+            margin-bottom: 12px;
+        }
+
+        .description p {
+            text-align: justify;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #123c30;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+                font-size: 14px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .gallery img {
+                height: 200px;
+            }
+
+            .intro h2 {
+                font-size: 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery img {
+                height: 230px;
+            }
+    }
+}
+</style>
+
+</head>
+
+<body>
+<!-- HEADER -->
+<header>
+    <center>
+        <h1>Tinagong Dagat</h1>
+        <hr>
+    </center>
+</header>
+
+<!-- MENU -->
+<nav>
+    <center>
+        <a href="index.html">HOME</a> |
+        <a href="Landscape.html">LANDSCAPES</a> |
+        <a href="gallery.html">GALLERY</a> |
+	<a href="location.html">LOCATION AND DIRECTION</a> |
+        <a href="about us.html">ABOUT US</a>
+		
+    </center>
+    <hr>
+</nav>
+
+<!-- LOCATION SECTION -->
+<section class="location">
+    <h3>📍 Find Tinagong Dagat</h3>
+
+    <p>
+        <strong>Location:</strong>
+        Barangay Ongyod, Miagao, Iloilo, Philippines
+    </p>
+
+    <p>
+        Discover the beautiful mountain scenery and peaceful
+        surroundings of Tinagong Dagat.
+    </p>
+
+    <!-- GOOGLE MAP -->
+    <iframe
+        src="https://maps.google.com/maps?q=Tinagong%20Dagat%20Miagao%20Iloilo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        title="Map showing Tinagong Dagat, Miagao, Iloilo"
+        loading="lazy"
+        allowfullscreen>
+    </iframe>
+
+    <!-- DIRECTIONS BUTTON -->
+    <a
+        href="https://www.google.com/maps/search/?api=1&query=Tinagong+Dagat+Miagao+Iloilo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="map-button">
+        Get Directions
+    </a>
+</section>
+
